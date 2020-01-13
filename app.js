@@ -18,7 +18,7 @@ let HelloWorld = () => {
             }, 1000);
         },
     }, [
-        dom.text(() => `Hello, ${whom}!`),
+        dom.text(() => `Hello, ${model.whom}!`),
     ])
 }
 
