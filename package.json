@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dominant": "guipra/dominant"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "wzrd": "^1.5.0"
+  }
+}
