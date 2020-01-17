@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/photon/0.1.2-alpha/css/photon.min.css' type='text/css' rel='stylesheet'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.4/tailwind.min.css' type='text/css' rel='stylesheet'/>
+    <link href='/node_modules/@fortawesome/fontawesome-free/css/all.css' rel='stylesheet'></link>
+    <link href='/style.css' type='text/css' rel='stylesheet'/>
+</head>
+<body>
+  <footer class= 'window'>
+    <!-- Component: Header -->
+    <header id="header" class="toolbar">
+      <div class="flex justify-between">
+        <div class="left-buttons">
+          <div class="btn-group">
+            <i class="btn fas fa-video"></i>
+            <i class="btn btn-default fas fa-arrows-alt"></i>
+            <i class="btn btn-default fas fa-hand-paper"></i>
+            <i class="btn btn-default fas fa-search-plus"></i>
+            <i class="btn btn-default fas fa-expand"></i>
+          </div>
+          <div class="btn-group">
+            <i class="btn fas fa-cube"></i>
+              <i class="btn btn-default fas fa-arrows-alt"></i>
+              <i class="btn btn-default fas fa-sync-alt"></i>
+              <i class="btn btn-default fas fa-expand-alt"></i>
+          </div>
+        </div>
+        <div class="right-buttons" >
+          <button class="btn btn-default btn-mini ">Layers <i class="fas fa-sort-down"></i></button>
+          <button class="btn btn-default btn-mini ">Layout <i class="fas fa-sort-down"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div class= 'window-content'>
+      <div class= 'flex'>
+        <!-- Component: Hierarchy -->
+        <div class=' bg-gray-200 w-hierarchy flex flex-col' id='hierarchy'>
+          <div class="toolbar w-hierarchy h-8 flex flex-col h-16">
+            <span class="flex m-1">
+                <div class="flex">
+                <i class="mr-1 btn btn-default fas fa-bars"></i> 
+                <p class="font-bold flex w-full justify-center">Hierarchy</p>
+              </div>
+            </span>
+            <div class="mx-1 ">
+              <div class="flex items-center" style="height: 2rem">
+                <button class="btn btn-default h-6 mr-1">Create <i class="fas fa-sort-down"></i></button>
+                <form>
+                    <input type="text" class="small-form-control">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="nav-group overflow-y-scroll flex-grow">
+            <p class="nav-group-item"><i class="fas fa-sort-down"></i> Fire Temple (0x2213000)</p> 
+            <p class="nav-group-item"><i class="fas fa-sort-down"></i> Normal Gameplay</p>  
+            <div class="ml-8">
+              <p class="nav-group-item active">Room 1 (0x222E000)</p>
+              <p class="nav-group-item ">Room 2 (0x2236000)</p>
+              <p class="nav-group-item ">Room 3 (0x2243000)</p>
+              <p class="nav-group-item ">Room 4 (0x2254000)</p>
+              <p class="nav-group-item ">Room 5 (0x2257000)</p>
+              <p class="nav-group-item ">Room 6 (0x225F000)</p>
+              <p class="nav-group-item ">Room 7 (0x226A000)</p>
+              <p class="nav-group-item ">Room 8 (0x2271000)</p>
+              <p class="nav-group-item ">Room 9 (0x2275000)</p>
+              <p class="nav-group-item">Room 10 (0x227F000)</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Component: Viewport -->
+        <div class='bg-black h-full w-viewport' id='viewport'>
+        </div>
+
+        <!-- Component: Properties -->
+        <div id='properties' class='overflow-y-scroll overflow-x-hidden w-properties' id='properties'>
+          blablabla99
+        </div>
+        
+      </div>
+    </div>
+    <!-- Component: Project Explorer -->
+    <footer class='h-project-explorer toolbar toolbar-footer'>
+    
+    </footer>
+  </div>
+</body>
