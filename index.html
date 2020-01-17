@@ -307,8 +307,8 @@
               </span>
             </div>
     
-            <div class="bg-gray-200 flex justify-center">
-              <button class="btn btn-default btn-large my-2 w-1/2"> Add Component</button>
+            <div class="bg-gray-200 flex justify-center h-full">
+                <button class="btn btn-default btn-large my-2 w-1/2"> Add Component</button>
             </div>
         </div>
       </div>
@@ -317,16 +317,15 @@
       </div>
     </div>
     <!-- Component: Project Explorer -->
-    <footer class='flex flex-col'>
+    <footer id='project-explorer' class='flex flex-col'>
+      
       <div class="tab-group">
         <div class="tab-item active">Project</div>
         <div class="tab-item">Console</div>
       </div>
-
       
-      <div class="flex">
-        
-        <div class='flex flex-col'>
+      <div id='navigator-and-explorer'class='flex '>
+        <div id='navigador'>
           
           <div class="toolbar h-8 w-64 flex flex-col justify-center">
             <div class="flex h-4 items-center justify-around">
@@ -337,8 +336,8 @@
             </div>
           </div>
           
+          <div class='flex'>
             <div class="bg-gray-200 h-24 w-64 overflow-y-scroll">
-              
               <div class="nav-group-title">
                 <i class="mr-1 fas fa-star"></i>Favorites
               </div>
@@ -387,10 +386,112 @@
               <div class="nav-group-item">
                 <i class="mr-1 far fa-folder"></i>efex
               </div>
-            
             </div>
+          </div>
+        </div>
+
+        <!-- Explorer window -->
+
+        <div id='explorer' class='h-explorer-window w-full flex flex-col' >
+          <header class="toolbar w-full items-center flex toolbar-padding"> 
+            <i class="ml-2 mr-1 far fa-folder"></i><p class="mr-1" >Assets</p>
+            <i class="mr-1 fas fa-caret-right"></i><p>_scripts</p>
+          </header>
+
+          <div class="bg-gray-200 h-explorer-window overflow-y-scroll flex flex-wrap w-full">
+            <div>
+              <div class="flex flex-col items-center mx-4 my-2">
+                <i class="far fa-folder fa-4x"></i>
+                <p style="margin: 0">Engine</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-folder fa-4x"></i>
+                <p style="margin: 0">Game</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Build</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Cog</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Console</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Deco</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Draw</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Flags</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">FPS_Counter</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">GameA</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Gears</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Gears_Test</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">Hit</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex flex-col items-center mx-6 my-2">
+                <i class="far fa-file fa-4x"></i>
+                <p style="margin: 0">HUD</p>
+              </div>
+            </div>
+          </div>
+
+          <footer class="toolbar toolbar-footer flex justify-end">
+            <input style="margin-right: 1rem" type="range"/>
+          </footer>
+          
 
         </div>
+      </div>
 
     </footer>
     

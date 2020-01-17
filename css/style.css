@@ -38,9 +38,13 @@ html, body{
 }
 
 .h-explorer-window{
-  height: 16rem;  
+  height: 8rem;  
 }
 
 .w-explorer-window{
     width: 85.5vw;
+}
+
+.toolbar-padding{
+    padding: 10px 0
 }
